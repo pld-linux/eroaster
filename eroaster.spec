@@ -7,13 +7,26 @@ License:	GPL
 Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at
 Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/%{name}/%{name}-%{version}.tar.gz
+BuildRequires:  python
 BuildRequires:  python-pygnome
 BuildRequires:  sox
 BuildRequires:  mpg123
 BuildRequires:  xmms
+BuildRequires:  cdrtools
 BuildRequires:	cdrtools-utils
 BuildRequires:	cdrtools-mkisofs
 BuildRequires:	cdrtools-cdda2wav
+Requires:  python
+Requires:  python-pygnome
+Requires:  sox
+Requires:  mpg123
+Requires:  xmms
+Requires:  cdrtools
+Requires:  cdrtools-utils
+Requires:  cdrtools-mkisofs
+Requires:  cdrtools-cdda2wav
+Requires:  cdrtools-readcd
+Requires:  normalize
 BuildArch:      noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
