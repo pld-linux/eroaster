@@ -9,7 +9,7 @@ License:	GPL
 Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at/
 Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/%{name}-%{version}-%{subver}.tar.gz
-# Source0-md5:	58b86d7a0a553445359cce2f9eec8061
+# Source0-md5:	30718fe3836797fef8b18e87d5204508
 BuildRequires:	cdrtools
 BuildRequires:	cdrtools-cdda2wav
 BuildRequires:	cdrtools-mkisofs
