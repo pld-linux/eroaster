@@ -9,6 +9,7 @@ Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at
 Source0:        ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/eroaster-2.1.0.tar.gz
 BuildRequires:	python
+BuildRequires:	python-pygnome
 BuildRequires:	python-pygtk
 BuildRequires:	sox
 BuildRequires:	mpg123
