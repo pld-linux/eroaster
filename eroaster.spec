@@ -7,7 +7,7 @@ Release:	0.1
 License:	GPL
 Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at
-Source0:        ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/eroaster-2.1.0.tar.gz
+Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/%{name}-%{version}.tar.gz
 BuildRequires:	python
 BuildRequires:	python-pygnome
 BuildRequires:	python-pygtk
@@ -18,7 +18,7 @@ BuildRequires:	cdrtools
 BuildRequires:	cdrtools-utils
 BuildRequires:	cdrtools-mkisofs
 BuildRequires:	cdrtools-cdda2wav
-BuildRequires:  rpm-pythonprov
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python
 Requires:	python-pygtk
 Requires:	sox
