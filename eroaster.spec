@@ -7,7 +7,6 @@ License:	GPL
 Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at
 Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/%{name}/%{name}-%{version}.tar.gz
-BuildArch:	noarch
 BuildRequires:  python-pygnome
 BuildRequires:  sox
 BuildRequires:  mpg123
@@ -15,6 +14,7 @@ BuildRequires:  xmms
 BuildRequires:	cdrtools-utils
 BuildRequires:	cdrtools-mkisofs
 BuildRequires:	cdrtools-cdda2wav
+BuildArch:      noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,10 +32,10 @@ Requires:	python-pygnome-applet
 Requires:	%{name}
 
 %description applet
-Gnome applet
+Gnome applet - small icon to add it to "quick lunch" menubar.
 
 %description applet -l pl
-Aplecik do gnoma
+Aplecik do gnoma - pozwala na "szybkie uruchomienie" eroastera.
 
 %prep
 
