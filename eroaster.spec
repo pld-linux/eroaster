@@ -4,7 +4,7 @@ Summary(pl):	Jeszcze jedna nak³adka tworz±ca kombajn do nagrywania CD pod Xem
 Name:		eroaster
 Version:	2.2.0
 %define		subver	0.5
-Release:	0.5
+Release:	0.6
 License:	GPL
 Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at/
@@ -17,7 +17,7 @@ BuildRequires:	cdrtools-utils
 BuildRequires:	mpg123
 BuildRequires:	python
 BuildRequires:	python-gnome-ui >= 1.99.15
-BuildRequires:	python-pygtk
+BuildRequires:	python-pygtk-gtk
 BuildRequires:	rpm-pythonprov
 BuildRequires:	sox
 BuildRequires:	xmms
@@ -29,7 +29,7 @@ Requires:	cdrtools-utils
 Requires:	mpg123
 Requires:	normalize
 %pyrequires_eq	python
-Requires:	python-pygtk
+Requires:	python-pygtk-gtk
 Requires:	sox
 Requires:	xmms
 BuildArch:	noarch
@@ -48,7 +48,7 @@ wygl±daj±cy.
 Summary:	ECLiPt Roaster GNOME Applet
 Summary(pl):	Kombajn do nagrywania p³yt CD - GNOME Applet
 Group:		Applications/Archiving
-Requires:	python-pygtk
+Requires:	python-pygtk-gtk
 Requires:	%{name}
 
 %description applet
