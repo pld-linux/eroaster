@@ -75,14 +75,13 @@ rm -rf $RPM_BUILD_ROOT
 %py_comp $RPM_BUILD_ROOT%{_libdir}/%{name}
 
 rm -f doc/COPYING
-gzip -9nf doc/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*.gz
+%doc doc/*
 %defattr(-,root,root)
 %attr(755,root,root) %{_bindir}/eroaster
 %{_datadir}/%{name}
