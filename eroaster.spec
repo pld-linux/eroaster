@@ -9,28 +9,28 @@ Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at/
 Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/%{name}-%{version}-%{release}.tar.gz
 # Source0-md5:	58b86d7a0a553445359cce2f9eec8061
+BuildRequires:	cdrtools
+BuildRequires:	cdrtools-cdda2wav
+BuildRequires:	cdrtools-mkisofs
+BuildRequires:	cdrtools-utils
+BuildRequires:	mpg123
 BuildRequires:	python
 BuildRequires:	python-gnome-ui >= 1.99.15
 BuildRequires:	python-pygtk
-BuildRequires:	sox
-BuildRequires:	mpg123
-BuildRequires:	xmms
-BuildRequires:	cdrtools
-BuildRequires:	cdrtools-utils
-BuildRequires:	cdrtools-mkisofs
-BuildRequires:	cdrtools-cdda2wav
 BuildRequires:	rpm-pythonprov
+BuildRequires:	sox
+BuildRequires:	xmms
+Requires:	cdrtools
+Requires:	cdrtools-cdda2wav
+Requires:	cdrtools-mkisofs
+Requires:	cdrtools-readcd
+Requires:	cdrtools-utils
+Requires:	mpg123
+Requires:	normalize
 %pyrequires_eq	python
 Requires:	python-pygtk
 Requires:	sox
-Requires:	mpg123
 Requires:	xmms
-Requires:	cdrtools
-Requires:	cdrtools-utils
-Requires:	cdrtools-mkisofs
-Requires:	cdrtools-cdda2wav
-Requires:	cdrtools-readcd
-Requires:	normalize
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -67,8 +67,8 @@ Aplecik do gnoma - pozwala na "szybkie uruchomienie" eroastera.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	prefix=$RPM_BUILD_ROOT/%{_prefix} \
-	sysconfdir=$RPM_BUILD_ROOT/%{_sysconfdir} \
+	prefix=$RPM_BUILD_ROOT%{_prefix} \
+	sysconfdir=$RPM_BUILD_ROOT%{_sysconfdir} \
 	appletdir=$RPM_BUILD_ROOT%{_applnkdir}/Utilities/CD-RW \
 	deskpixdir=$RPM_BUILD_ROOT%{_pixmapsdir}
 
