@@ -8,20 +8,13 @@ Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at
 Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/%{name}/%{name}-%{version}.tar.gz
 BuildArch:	noarch
-Requires:	python >= 1.5.0
-Requires:	pygtk >= 0.6.6
-Requires:	pygnome >= 1.0.53
-Requires:	cdrtools-utils
-Requires:	cdrtools-mkisofs
-Requires:	cdrtools-cdda2wav
-Requires:	sox
-Requires:	mpg123
-Requires:	xmms
-BuildRequires:	cdrtools-utils
-BuildRequires:	python-pygnome
-BuildRequires:	sox
-BuildRequires:	mpg123
+BuildRequires:  python-pygnome
+BuildRequires:  sox
+BuildRequires:  mpg123
 BuildRequires:  xmms
+BuildRequires:	cdrtools-utils
+BuildRequires:	cdrtools-mkisofs
+BuildRequires:	cdrtools-cdda2wav
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,7 +29,7 @@ korzysta z bibilotek gnomowych. Bardzo przyjazny i mi³o wygl±daj±cy.
 Summary:	ECLiPt Roaster GNOME Applet
 Group:		Applications/Archiving
 Requires:	python-pygnome-applet
-Requires:	eroaster
+Requires:	%{name}
 
 %description applet
 Gnome applet
