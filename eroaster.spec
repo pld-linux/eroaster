@@ -51,10 +51,10 @@ Requires:	python-pygtk
 Requires:	%{name}
 
 %description applet
-Gnome applet - small icon to add it to "quick lunch" menubar.
+GNOME applet - small icon to add it to "quick lunch" menubar.
 
 %description applet -l pl
-Aplecik do gnoma - pozwala na "szybkie uruchomienie" eroastera.
+Aplecik do GNOME'a - pozwala na "szybkie uruchomienie" eroastera.
 
 %prep
 %setup -q
