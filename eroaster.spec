@@ -6,9 +6,9 @@ Version:	2.2.0
 Release:	0.6
 License:	GPL
 Group:		Applications/Archiving
-URL:		http://eclipt.uni-klu.ac.at/
 Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/%{name}-%{version}-%{subver}.tar.gz
 # Source0-md5:	30718fe3836797fef8b18e87d5204508
+URL:		http://eclipt.uni-klu.ac.at/
 BuildRequires:	cdrtools
 BuildRequires:	cdrtools-cdda2wav
 BuildRequires:	cdrtools-mkisofs
@@ -47,7 +47,7 @@ Summary:	ECLiPt Roaster GNOME Applet
 Summary(pl):	Kombajn do nagrywania p³yt CD - GNOME Applet
 Group:		Applications/Archiving
 Requires:	python-pygtk-gtk
-Requires:	%{name}
+Requires:	%{name} = %{version}-%{release}
 
 %description applet
 GNOME applet - small icon to add it to "quick lunch" menubar.
@@ -84,11 +84,12 @@ rm -rf $RPM_BUILD_ROOT
 %doc doc/*
 %attr(755,root,root) %{_bindir}/eroaster
 %{_datadir}/%{name}
+%dir %{_libdir}/%{name}
 %{_libdir}/%{name}/*.py[co]
 %{_libdir}/%{name}/ecat.py
 %{_libdir}/%{name}/*.shortcuts
-%{_libdir}/%{name}/glade/*.glade
-%{_libdir}/%{name}/xml/*.xml
+%{_libdir}/%{name}/glade
+%{_libdir}/%{name}/xml
 %{_pixmapsdir}/*.xpm
 %{_applnkdir}/Utilities/CD-RW/*.desktop
 
