@@ -2,12 +2,12 @@
 Summary:	ECLiPt Roaster
 Summary(pl):	Jeszcze jedna nak³adka tworz±ca kombajn do nagrywania CD pod Xem
 Name:		eroaster
-Version:	2.0.12
+Version:	2.1.0
 Release:	0.1
 License:	GPL
 Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at
-Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://prdownloads.sourceforge.net/eroaster/eroaster-2.1.0.tar.gz
 BuildRequires:	python
 BuildRequires:	python-pygnome
 BuildRequires:	sox
@@ -59,6 +59,7 @@ Aplecik do gnoma - pozwala na "szybkie uruchomienie" eroastera.
 
 %build
 %configure2_13
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -72,12 +73,15 @@ rm -rf $RPM_BUILD_ROOT
 %py_ocomp $RPM_BUILD_ROOT%{_libdir}/%{name}
 %py_comp $RPM_BUILD_ROOT%{_libdir}/%{name}
 
+rm -f doc/COPYING
+gzip -9nf doc/*
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*
+%doc doc/*.gz
 %defattr(-,root,root)
 %attr(755,root,root) %{_bindir}/eroaster
 %{_datadir}/%{name}
