@@ -17,7 +17,6 @@ BuildRequires:	mpg123
 BuildRequires:	python
 BuildRequires:	python-gnome-ui >= 1.99.15
 BuildRequires:	python-pygtk-gtk
-BuildRequires:	rpm-pythonprov
 BuildRequires:	sox
 BuildRequires:	xmms
 Requires:	cdrtools
