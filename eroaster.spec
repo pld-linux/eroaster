@@ -3,11 +3,12 @@ Summary:	ECLiPt Roaster
 Summary(pl):	Jeszcze jedna nak³adka tworz±ca kombajn do nagrywania CD pod Xem
 Name:		eroaster
 Version:	2.2.0
+%define		subver	0.3
 Release:	0.3
 License:	GPL
 Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at/
-Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/%{name}-%{version}-%{release}.tar.gz
+Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/obsolete/%{name}-%{version}-%{subver}.tar.gz
 # Source0-md5:	58b86d7a0a553445359cce2f9eec8061
 BuildRequires:	cdrtools
 BuildRequires:	cdrtools-cdda2wav
