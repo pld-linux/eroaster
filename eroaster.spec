@@ -40,7 +40,7 @@ using the python-gnome bindings.
 
 %description -l pl
 Roaster jest nak³adk± na cdrecorda i inne cdrtoolsy. Napisany w
-pythonie korzysta z bibilotek gnomowych. Bardzo przyjazny i mi³o
+pythonie korzysta z bibliotek gnomowych. Bardzo przyjazny i mi³o
 wygl±daj±cy.
 
 %package applet
