@@ -1,4 +1,3 @@
-%include        /usr/lib/rpm/macros.python
 Summary:	ECLiPt Roaster
 Summary(pl):	Jeszcze jedna nak³adka tworz±ca kombajn do nagrywania CD pod Xem
 Name:		eroaster
