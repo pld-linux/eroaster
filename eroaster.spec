@@ -57,7 +57,7 @@ GNOME applet - small icon to add it to "quick lunch" menubar.
 Aplecik do GNOME'a - pozwala na "szybkie uruchomienie" eroastera.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}-%{subver}
 
 %build
 %configure2_13
