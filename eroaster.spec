@@ -8,6 +8,7 @@ License:	GPL
 Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at/
 Source0:	ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/%{name}-%{version}-%{release}.tar.gz
+# Source0-md5:	58b86d7a0a553445359cce2f9eec8061
 BuildRequires:	python
 BuildRequires:	python-gnome-ui >= 1.99.15
 BuildRequires:	python-pygtk
