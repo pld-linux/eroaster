@@ -7,9 +7,9 @@ Release:	0.1
 License:	GPL
 Group:		Applications/Archiving
 URL:		http://eclipt.uni-klu.ac.at
-Source0:	http://prdownloads.sourceforge.net/eroaster/eroaster-2.1.0.tar.gz
+Source0:        ftp://eclipt.uni-klu.ac.at/pub/projects/eroaster/snapshots/eroaster-2.1.0.tar.gz
 BuildRequires:	python
-BuildRequires:	python-pygnome
+BuildRequires:	python-pygtk
 BuildRequires:	sox
 BuildRequires:	mpg123
 BuildRequires:	xmms
@@ -19,7 +19,7 @@ BuildRequires:	cdrtools-mkisofs
 BuildRequires:	cdrtools-cdda2wav
 BuildRequires:  rpm-pythonprov
 %pyrequires_eq	python
-Requires:	python-pygnome
+Requires:	python-pygtk
 Requires:	sox
 Requires:	mpg123
 Requires:	xmms
@@ -45,7 +45,7 @@ wygl±daj±cy.
 Summary:	ECLiPt Roaster GNOME Applet
 Summary(pl):	Kombajn do nagrywania p³yt CD - GNOME Applet
 Group:		Applications/Archiving
-Requires:	python-pygnome-applet
+Requires:	python-pygtk
 Requires:	%{name}
 
 %description applet
