@@ -1,5 +1,5 @@
 Summary:	ECLiPt Roaster
-Summary(pl):	Jeszcze jedna nak³adka tworz±ca kombajn do nagrywania CD pod Xem
+Summary(pl.UTF-8):   Jeszcze jedna nakÅ‚adka tworzÄ…ca kombajn do nagrywania CD pod Xem
 Name:		eroaster
 Version:	2.2.0
 %define		subver	0.5
@@ -37,14 +37,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ECLiPt Roaster is a frontend to cdrecord and mkisofs written in python
 using the python-gnome bindings.
 
-%description -l pl
-Roaster jest nak³adk± na cdrecorda i inne cdrtoolsy. Napisany w
-pythonie korzysta z bibliotek gnomowych. Bardzo przyjazny i mi³o
-wygl±daj±cy.
+%description -l pl.UTF-8
+Roaster jest nakÅ‚adkÄ… na cdrecorda i inne cdrtoolsy. Napisany w
+pythonie korzysta z bibliotek gnomowych. Bardzo przyjazny i miÅ‚o
+wyglÄ…dajÄ…cy.
 
 %package applet
 Summary:	ECLiPt Roaster GNOME Applet
-Summary(pl):	Kombajn do nagrywania p³yt CD - GNOME Applet
+Summary(pl.UTF-8):   Kombajn do nagrywania pÅ‚yt CD - GNOME Applet
 Group:		Applications/Archiving
 Requires:	python-pygtk-gtk
 Requires:	%{name} = %{version}-%{release}
@@ -52,7 +52,7 @@ Requires:	%{name} = %{version}-%{release}
 %description applet
 GNOME applet - small icon to add it to "quick lunch" menubar.
 
-%description applet -l pl
+%description applet -l pl.UTF-8
 Aplecik do GNOME'a - pozwala na "szybkie uruchomienie" eroastera.
 
 %prep
