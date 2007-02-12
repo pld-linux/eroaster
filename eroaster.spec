@@ -1,5 +1,5 @@
 Summary:	ECLiPt Roaster
-Summary(pl.UTF-8):   Jeszcze jedna nakładka tworząca kombajn do nagrywania CD pod Xem
+Summary(pl.UTF-8):	Jeszcze jedna nakładka tworząca kombajn do nagrywania CD pod Xem
 Name:		eroaster
 Version:	2.2.0
 %define		subver	0.5
@@ -44,7 +44,7 @@ wyglądający.
 
 %package applet
 Summary:	ECLiPt Roaster GNOME Applet
-Summary(pl.UTF-8):   Kombajn do nagrywania płyt CD - GNOME Applet
+Summary(pl.UTF-8):	Kombajn do nagrywania płyt CD - GNOME Applet
 Group:		Applications/Archiving
 Requires:	python-pygtk-gtk
 Requires:	%{name} = %{version}-%{release}
